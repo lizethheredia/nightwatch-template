@@ -224,14 +224,14 @@ const SAUCELABS_CONF = {
 };
 
 module.exports = {
-    globals_path: `${__dirname}/../globals.js`,
+    globals_path: "../globals.js",
     launch_url: server.getServer(),
     src_folders: ['tests/e2e'],
     selenium: (useCloud ? SELENIUM_SAUCELABS_CONF : SELENIUM_CONF),
     test_settings: (useCloud ? SAUCELABS_CONF : DEFAULT_CONF),
     //selenium: (useCloud ? SELENIUM_BROWSERSTACK_CONF : SELENIUM_CONF),
     //test_settings: (useCloud ? BROWSERSTACK_CONF : DEFAULT_CONF),
-    custom_commands_path: ['custom-commands'],
+    custom_commands_path: ['custom_commands'],
     custom_assertions_path: '',
     live_output: false,
     parallel_process_delay: 10,

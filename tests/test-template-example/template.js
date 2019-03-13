@@ -1,7 +1,7 @@
 module.exports = {
     '@tags': ['template'],
   
-    'test skeleton template': function(browser) {
+    'test template': function(browser) {
       
       browser
         // GIVEN the user does some pre-condition

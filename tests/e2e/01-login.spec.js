@@ -5,7 +5,7 @@
 const { facebookUsername, facebookPassword } = require('../../globals');
 
 module.exports = {
-    'Critical Tests: Successful Login - Valid User': (browser) => {
+    'Successful Login - Valid User': (browser) => {
         const loginPage = browser.page.login();
         const wallPage = browser.page.wall();
         loginPage.navigate()

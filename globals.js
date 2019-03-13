@@ -22,7 +22,7 @@ const useCloud = process.env.IS_CLOUD === 'true';
 const browserStackUser = process.env.BROWSERSTACK_USER;
 const browserStackKey = process.env.BROWSERSTACK_ACCESSKEY;
 const sauceLabsUser = process.env.SAUCE_USERNAME;
-const sauceLabskKey = process.env.SAUCE_ACCESS_KEY;
+const sauceLabsKey = process.env.SAUCE_ACCESS_KEY;
 const facebookUsername = process.env.FACEBOOK_USERNAME;
 const facebookPassword = process.env.FACEBOOK_PASSWORD;
 const abortOnAssertionFailure = false;
@@ -36,7 +36,7 @@ module.exports = {
     browserStackUser,
     browserStackKey,
     sauceLabsUser,
-    sauceLabskKey,
+    sauceLabsKey,
     facebookUsername,
     facebookPassword,
     abortOnAssertionFailure,

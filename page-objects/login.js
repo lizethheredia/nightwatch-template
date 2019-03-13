@@ -12,13 +12,13 @@ module.exports = {
 
   elements: {
     loginEmail: {
-      selector: '[name="email"]'
+      selector: '[name=email]'
     },
     loginPassword: {
-      selector: '[name="pass"]'
+      selector: '[name=pass]'
     },
     loginButton: {
-      selector: '[name="login"]',
+      selector: '#loginbutton',
     },
   },
 
