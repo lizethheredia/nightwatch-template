@@ -31,7 +31,7 @@
     "mocha-coverage": "jscoverage lib --exclude *.ejs,*.json && NIGHTWATCH_COV=1 ./node_modules/.bin/mocha test/src --reporter html-cov > coverage.html",
     "mocha-lcov-coverage": "jscoverage lib --exclude *.ejs,*.json && NIGHTWATCH_COV=1 ./node_modules/.bin/mocha test/src --reporter mocha-lcov-reporter > lib-cov/coverage.lcov",
     "e2eTest": "(export TEST_ENV=localhost; ./node_modules/.bin/nightwatch -c tests/e2e/config/nightwatch.conf.js -e ios)",
-    "e2eTestBrowserStack": "(export TEST_ENV=stage; export IS_CLOUD=true; ./node_modules/.bin/nightwatch -c tests/e2e/config/nightwatch.conf.js)",
-    "e2eTestSauceLabs": "(export TEST_ENV=stage; export IS_CLOUD=true; ./node_modules/.bin/nightwatch -c  tests/e2e/config/nightwatch.conf.js -e sauce-iphone)"
+    "e2eTestBrowserStack": "(export TEST_ENV=stage; export IS_CLOUD=true; ./node_modules/.bin/nightwatch -c config/nightwatch.conf.js)",
+    "e2eTestSauceLabs": "(export TEST_ENV=stage; export IS_CLOUD=true; ./node_modules/.bin/nightwatch -c  config/nightwatch.conf.js -e sauce-osx-safari)"
   }
 }
