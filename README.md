@@ -2,7 +2,7 @@
 
 This README describes the steps to set up the test environment for the Nightwatch E2E Tests.
 
-This document is addressed to developers and tests with advanced knowledge in Nightwach.js.
+This document is addressed to developers and tests with advanced knowledge in Javascript.
 
 ## Table of Contents
 
