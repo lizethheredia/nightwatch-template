@@ -1,4 +1,4 @@
-# SheerID Automation with Nightwatch
+# Nightwatch Automation with Nightwatch
 
 This README describes the steps to set up the test environment for the Nightwatch E2E Tests.
 
