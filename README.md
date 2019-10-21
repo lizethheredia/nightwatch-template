@@ -42,7 +42,7 @@ For example, add this to your ~/.bashrc or ~/.bash_profile:
         export BROWSERSTACK_ACCESSKEY="xxxxxxxxx"
         export FACEBOOK_USERNAME="john.doe@sheerid.com"
         export FACEBOOK_PASSWORD="xxxxxxxx"
-        export SAUCE_USERNAME="wizeqateam"
+        export SAUCE_USERNAME="xxxxxxxx"
         export SAUCE_ACCESS_KEY="xxxxxxxxxxxx"
 
 ```
