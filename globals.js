@@ -8,8 +8,6 @@ const abortOnAssertionFailure = false;
 const waitForConditionPollInterval = 5000;
 const waitForConditionTimeout = 6000;
 
-console.log(facebookUsername)
-console.log(facebookPassword)
 module.exports = {
     useCloud,
     sauceLabsUser,
