@@ -6,7 +6,7 @@ const { waitForConditionTimeout } = require('../globals');
     */
 exports.command = function (selector) {
     this
-        .waitForElementVisible(selector, waitForConditionTimeout)
+        .waitForElementPresent(selector, waitForConditionTimeout)
         .click(selector);
     return this.api;
 };

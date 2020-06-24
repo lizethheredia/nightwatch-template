@@ -7,15 +7,15 @@
 
 module.exports = {
   url: function () {
-    return this.api.launchUrl + 'authentication/';
+    return `${this.api.launchUrl}login/`;
   },
 
   elements: {
     loginEmail: {
-      selector: '[name=email]'
+      selector: '#email'
     },
     loginPassword: {
-      selector: '[name=pass]'
+      selector: '#pass'
     },
     loginButton: {
       selector: '#loginbutton',

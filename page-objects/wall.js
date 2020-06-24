@@ -13,7 +13,7 @@ module.exports = {
 
   elements: {
     feedContainer: {
-      selector: '#feedx_sprouts_container'
+      selector: '#userNav'
     },
   },
 

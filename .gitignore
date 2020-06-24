@@ -1,3 +1,6 @@
 .DS_Store
 reports/*
 node_modules/
+.env
+.idea/
+selenium-server.log

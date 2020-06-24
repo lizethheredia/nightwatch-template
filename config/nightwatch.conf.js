@@ -1,7 +1,7 @@
-
+require('dotenv').config();
 const server = require('../servers/server-urls');
 const {
-    useCloud, browserStackUser, browserStackKey, sauceLabsUser, sauceLabsKey,
+    useCloud, sauceLabsUser, sauceLabsKey,
 } = require('../globals');
 const seleniumServer = require('selenium-server');
 const chromedriver = require('chromedriver');
@@ -45,7 +45,12 @@ const DEFAULT_CONF = {
         skip_testcases_on_fail: false,
     },
     chrome: {
-        desiredCapabilities: { browserName: 'chrome' },
+        desiredCapabilities: { browserName: 'chrome',
+            chromeOptions: {
+                w3c: false,
+                args: ['--disable-popup-blocking --start-maximized'],
+            }
+        },
     },
     firefox: {
         desiredCapabilities: {
@@ -61,24 +66,24 @@ const DEFAULT_CONF = {
         },
     },
 };
-const BROWSERSTACK_CONF = {
-    default: {
-        launch_url: server.getServer(),
-        desiredCapabilities: {
-            'browserstack.user': browserStackUser,
-            'browserstack.key': browserStackKey,
-            browserName: 'chrome',
-            chromeOptions: {
-               args: ['window-size=1280,800'],
-            },
-            /* device: 'iPhone 8 Plus',
-            realMobile: 'true',
-            os_version: '11', */
-        },
-        selenium_host: 'hub-cloud.browserstack.com',
-        selenium_port: 80,
-    },
-};
+// const BROWSERSTACK_CONF = {
+//     default: {
+//         launch_url: server.getServer(),
+//         desiredCapabilities: {
+//             'browserstack.user': browserStackUser,
+//             'browserstack.key': browserStackKey,
+//             browserName: 'chrome',
+//             chromeOptions: {
+//                args: ['window-size=1280,800'],
+//             },
+//             /* device: 'iPhone 8 Plus',
+//             realMobile: 'true',
+//             os_version: '11', */
+//         },
+//         selenium_host: 'hub-cloud.browserstack.com',
+//         selenium_port: 80,
+//     },
+// };
 
 const SAUCELABS_CONF = {
 
