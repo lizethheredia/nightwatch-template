@@ -23,7 +23,7 @@
     "saucelabs": "^4.4.1",
     "selenium-server": "^3.9",
     "selenium-server-standalone-jar": "3.141.59",
-    "selenium-webdriver": "^3.6.0"
+    "selenium-webdriver": "^4.8.2"
   },
   "man": "",
   "scripts": {
