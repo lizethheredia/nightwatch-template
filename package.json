@@ -15,7 +15,7 @@
     "url": "git@github.com:nightwatchjs/nightwatch.git"
   },
   "dependencies": {
-    "chromedriver": "^83.0.0",
+    "chromedriver": "^112.0.0",
     "dotenv": "^8.2.0",
     "eyes.selenium": "3.9.1  ",
     "geckodriver": "^1.19.1",
